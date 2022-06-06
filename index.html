@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="ru">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, viewport-fit=cover">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <link rel="stylesheet" href="./libs/slick.css">
+      <link rel="stylesheet" href="./libs/slick-theme.css">
+      <link rel="stylesheet" href="./libs/jquery.fancybox.min.css">
+      <link rel="stylesheet" href="./libs/aos.css">
+      <link rel="stylesheet" href="./css/style.css">
+      <title>Keduki Lusso</title>
+      <script>
+         var url = new URL(window.location.href);
+         var pixel = url.searchParams.get('pixel');
+         var tiktok = url.searchParams.get('tiktok');
+         var gtmId = url.searchParams.get('gtm');
+     
+         if (pixel) {
+           ! function(f, b, e, v, n, t, s) {
+             if (f.fbq) return;
+             n = f.fbq = function() {
+               n.callMethod ?
+                 n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+             };
+             if (!f._fbq) f._fbq = n;
+             n.push = n;
+             n.loaded = !0;
+             n.version = '2.0';
+             n.queue = [];
+             t = b.createElement(e);
+             t.async = !0;
+             t.src = v;
+             s = b.getElementsByTagName(e)[0];
+             s.parentNode.insertBefore(t, s)
+           }(window, document, 'script',
+             'https://connect.facebook.net/en_US/fbevents.js');
+           fbq('init', pixel);
+           fbq('track', 'PageView');
+         }
+         if (tiktok) {
+           (function() {
+             var ta = document.createElement('script');
+             ta.type = 'text/javascript';
+             ta.async = true;
+             ta.src = 'https://analytics.tiktok.com/i18n/pixel/sdk.js?sdkid=' + tiktok;
+             var s = document.getElementsByTagName('script')[0];
+             s.parentNode.insertBefore(ta, s);
+           })();
+         }
+         if (gtmId) {
+           (function(w, d, s, l, i) {
+             w[l] = w[l] || [];
+             w[l].push({
+               'gtm.start': new Date().getTime(),
+               event: 'gtm.js'
+             });
+             var f = d.getElementsByTagName(s)[0],
+               j = d.createElement(s),
+               dl = l != 'dataLayer' ? '&l=' + l : '';
+             j.async = true;
+             j.src = '//www.googletagmanager.com/gtm.js?id=' + i + dl;
+             f.parentNode.insertBefore(j, f);
+           })(window, document, 'script', 'dataLayer', gtmId)
+         }
+       </script>
+   </head>
+   <body data-path="./">
+      <div class="site__wrapper">
+         <!-- Header -->
+         <header class="site__header">
+            <div class="container">
+               <div class="header__content">
+                  <img src="./img/logo.png" alt="logo" class="site__logo" data-aos="fade-right">
+                  <div class="header__title-wrapper">
+                     <h2 class="header__title" data-aos="fade-right" data-aos-delay="200">Неперевершений комфорт від KEDUKI для твоїх ніжок!</h2>
+                     <p class="header__sale">SALE -50%</p>
+                  </div>
+                  <p class="header__text" data-aos="fade-right" data-aos-delay="400">Стильні шльопанці Lusso створені для твоїх карколомних образів!
+                  </p>
+                  <div class="header__order">
+                     <div class="price" data-aos="fade-right" data-aos-delay="600">
+                        <span class="old__price">1190 грн</span>
+                        <span class="new__price">1190 грн</span>
+                     </div>
+                     <a href="#card" class="header__order-btn scroll" data-aos="fade-right" data-aos-delay="800">Замовити</a>
+                  </div>
+               </div>
+            </div>
+            <div class="sale__line-wrapper">
+               <div class="sale__line">
+                  <p class="sale__item">SALE -50%</p>
+                  <p class="sale__item">SALE -50%</p>
+                  <p class="sale__item">SALE -50%</p>
+                  <p class="sale__item">SALE -50%</p>
+                  <p class="sale__item">SALE -50%</p>
+                  <p class="sale__item">SALE -50%</p>
+                  <p class="sale__item">SALE -50%</p>
+                  <p class="sale__item">SALE -50%</p>
+                  <p class="sale__item">SALE -50%</p>
+                  <p class="sale__item">SALE -50%</p>
+                  <p class="sale__item">SALE -50%</p>
+               </div>
+            </div>
+         </header>
+         <!-- Main -->
+         <main class="site__main">
+            <div class="first__section">
+               <div class="summer__section">
+                  <div class="container">
+                     <div class="summer__section-wrapper">
+                        <h3 class="summer__title">Summer 2021</h3>
+                        <div class="title__wrapper" data-aos="fade-left">
+                           <h3 class="block__title">Тренд сезону 2021 – тільки у нас!</h3>
+                        </div>
+                        <div class="advantages">
+                           <div class="advantage" data-aos="fade-right">
+                              <h4 class="advantage__title">Натуральні матеріали</h4>
+                              <p class="advantage__text">
+                                 Шльопанці виготовлені з м'якої натуральної шкіри високої якості.</p>
+                              <img src="./img/fs-icon1.png" alt="лого" class="advantage__logo">
+                           </div>
+                           <div class="advantage" data-aos="fade-right" data-aos-delay="200">
+                              <h4 class="advantage__title">
+                                 італійський бренд</h4>
+                              <p class="advantage__text">
+                                 Keduki знає все про комфортне і красиве взуття!
+                              </p>
+                              <img src="./img/fs-icon2.png" alt="лого" class="advantage__logo">
+                           </div>
+                           <div class="advantage" data-aos="fade-right" data-aos-delay="400">
+                              <h4 class="advantage__title">
+                                 Дуже вигідні ціни
+                              </h4>
+                              <p class="advantage__text">
+                                 Акція на літнє взуття – дуже зручний момент для того, щоб поповнити свій гардероб гарними новинками</p>
+                              <img src="./img/fs-icon3.png" alt="лого" class="advantage__logo">
+                           </div>
+                        </div>
+                        <img src="./img/fs-bg1.jpg" alt="фото" class="summer__foto summer__foto-1">
+                        <div class="summer__foto-wrapper">
+                           <img src="./img/fs-bg2.jpg" alt="фото" class="summer__foto summer__foto-2">
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="info__section">
+                  <div class="container info__container">
+                     <div class="info__wrapper">
+                        <h3 class="block__title" data-aos="fade-left">
+                           Ефектне взуття від найкращого виробника
+                        </h3>
+                        <p class="info__text" data-aos="fade-left" data-aos-delay="200">
+                           Великий асортимент, легкий та зручний спосіб замовлення, уважна підтримка, швидка доставка – ось за що нас люблять!
+                        </p>
+                        <div class="info__blocks" data-aos="fade-left" data-aos-delay="400">
+                           <div class="info__block">
+                              <span class="info__number">100+</span>
+                              <span class="info__block-text">актуальних моделей
+                              </span>
+                           </div>
+                           <div class="info__block">
+                              <span class="info__number">5+</span>
+                              <span class="info__block-text">років на ринку</span>
+                           </div>
+                           <div class="info__block">
+                              <span class="info__number">9399+</span>
+                              <span class="info__block-text">задоволених покупців</span>
+                           </div>
+                        </div>
+                        <div class="info__order" data-aos="fade-left" data-aos-delay="600">
+                           <a href="#card" class="header__order-btn">Замовити</a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="galary">
+                  <div class="galary__block">
+                     <a href="./img/galary/1.jpg" data-fancybox="gallery">
+                     <img src="./img/galary/1.jpg" alt="фото" class="galary__img galary__img-1"></a>
+                  </div>
+                  <div class="galary__block">
+                     <a href="./img/galary/2.jpg" data-fancybox="gallery">
+                     <img src="./img/galary/2.jpg" alt="фото" class="galary__img galary__img-1"></a>
+                  </div>
+                  <div class="galary__block">
+                     <a href="./img/galary/3.jpg" data-fancybox="gallery">
+                     <img src="./img/galary/3.jpg" alt="фото" class="galary__img galary__img-1"></a>
+                  </div>
+                  <div class="galary__block">
+                     <a href="./img/galary/4.jpg" data-fancybox="gallery">
+                     <img src="./img/galary/4.jpg" alt="фото" class="galary__img galary__img-1"></a>
+                  </div>
+               </div>
+               <div class="sale__line-wrapper">
+                  <div class="sale__line">
+                     <p class="sale__item">SALE -50%</p>
+                     <p class="sale__item">SALE -50%</p>
+                     <p class="sale__item">SALE -50%</p>
+                     <p class="sale__item">SALE -50%</p>
+                     <p class="sale__item">SALE -50%</p>
+                     <p class="sale__item">SALE -50%</p>
+                     <p class="sale__item">SALE -50%</p>
+                     <p class="sale__item">SALE -50%</p>
+                     <p class="sale__item">SALE -50%</p>
+                     <p class="sale__item">SALE -50%</p>
+                     <p class="sale__item">SALE -50%</p>
+                  </div>
+               </div>
+            </div>
+            <div class="second__section">
+               <div class="card__section">
+                  <div class="container">
+                     <div class="card card__1" id="card" data-aos="fade-right">
+                        <div class="card__left">
+                           <div class="card__info-block active__info">
+                              <img src="./img/logo.png" alt="логотип" class="card__logo">
+                              <h3 class="card__title">ЖІНОЧІ ШЛЬОПАНЦI KEDUKI LUSSO
+                              </h3>
+                              <p class="card__info">
+                                 Сезон: Літо<br>
+                                 Верх: Натуральна теляча шкіра<br>
+                                 Підошва: Поліуретан<br>
+                                 Стиль: Щоденний<br>
+                                 Колір: білий
+                              </p>
+                              <div class="card__size-btns">
+                                 <div class="btn__block active">
+                                    <button type="button" class="card__size-btn">36</button>
+                                    <span class="card__size">24 см</span>
+                                 </div>
+                                 <div class="btn__block">
+                                    <button type="button" class="card__size-btn">37</button>
+                                    <span class="card__size">24.5 см</span>
+                                 </div>
+                                 <div class="btn__block">
+                                    <button type="button" class="card__size-btn">38</button>
+                                    <span class="card__size">25 см</span>
+                                 </div>
+                                 <div class="btn__block">
+                                    <button type="button" class="card__size-btn">39</button>
+                                    <span class="card__size">25.5 см</span>
+                                 </div>
+                                 <div class="btn__block">
+                                    <button type="button" class="card__size-btn">40</button>
+                                    <span class="card__size">26 см</span>
+                                 </div>
+                              </div>
+                              <div class="card__price">
+                                 <div class="price">
+                                    <span class="old__price">1190 грн</span>
+                                    <span class="new__price">1190 грн</span>
+                                 </div>
+                              </div>
+                              <button type="button" class="header__order-btn">Замовити</button>
+                           </div>
+                           <div class="card__info-order">
+                              <img src="./img/logo.png" alt="логотип" class="card__logo">
+                              <h3 class="card__title">ЖІНОЧІ ШЛЬОПАНЦI KEDUKI LUSSO</h3>
+                              <form class="card__form" name="form1">
+                                 <div class="input-wrapper">
+                                    <input type="text" class="card__input" placeholder="Ім'я" required name="name">
+                                 </div>
+                                 <div class="input-wrapper">
+                                    <input type="tel" class="card__input" placeholder="Телефон" required name="phone">
+                                 </div>
+                                 <!-- <p class="card__info-sale">При покупке двух пар <br><span>скидка 200 грн</span></p> -->
+                                 <div class="card__price">
+                                    <div class="price">
+                                       <span class="old__price">1190 грн</span>
+                                       <span class="new__price">1190 грн</span>
+                                    </div>
+                                 </div>
+                                 <button type="submit" class="header__order-btn">Надіслати</button>
+                                 <input name="comment" type="hidden" value="">
+                              </form>
+                              <button class="card__back">Назад</button>
+                              
+                           </div>
+                        </div>
+                        <div class="card__right">
+                           <div class="slider__btns">
+                              <button class="slider__btn btn__prev"></button>
+                              <button class="slider__btn btn__next"></button>
+                           </div>
+                           <div class="slider">
+                              <div class="slide">
+                                 <a href="./img/card-1/1.jpg" data-fancybox="slider-1">
+                                    <div style="background-image: url(./img/card-1/1.jpg)" alt="фото" class="slide__img"></div>
+                                 </a>
+                              </div>
+                              <div class="slide">
+                                 <a href="./img/card-1/2.jpg" data-fancybox="slider-1">
+                                    <div style="background-image: url(./img/card-1/2.jpg)" alt="фото" class="slide__img"></div>
+                                 </a>
+                              </div>
+                              <div class="slide">
+                                 <a href="./img/card-1/3.jpg" data-fancybox="slider-1">
+                                    <div style="background-image: url(./img/card-1/3.jpg)" alt="фото" class="slide__img"></div>
+                                 </a>
+                              </div>
+                              <div class="slide">
+                                 <a href="./img/card-1/4.jpg" data-fancybox="slider-1">
+                                    <div style="background-image: url(./img/card-1/4.jpg)" alt="фото" class="slide__img"></div>
+                                 </a>
+                              </div>
+                              <div class="slide">
+                                 <a href="./img/card-1/5.jpg" data-fancybox="slider-1">
+                                    <div style="background-image: url(./img/card-1/5.jpg)" alt="фото" class="slide__img"></div>
+                                 </a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="card card__3" data-aos="fade-right">
+                        <div class="card__left">
+                           <div class="card__info-block active__info">
+                              <img src="./img/logo.png" alt="логотип" class="card__logo">
+                              <h3 class="card__title">Keduki Grande Ladies (7588)</h3>
+                              <p class="card__info">
+                                 Тип: Жіночі<br>
+                                 Сезон: Весна – літо<br>
+                                 Верх: натуральна шкіра<br>
+                                 Підошва: Поліуретан<br>
+                                 Стиль: Casual<br>
+                                 Колір білий
+                              </p>
+                              <div class="card__size-btns">
+                                 <div class="btn__block active">
+                                    <button type="button" class="card__size-btn">36</button>
+                                    <span class="card__size">23.5 см</span>
+                                 </div>
+                                 <div class="btn__block">
+                                    <button type="button" class="card__size-btn">37</button>
+                                    <span class="card__size">24 см</span>
+                                 </div>
+                                 <div class="btn__block">
+                                    <button type="button" class="card__size-btn">38</button>
+                                    <span class="card__size">24.5 см</span>
+                                 </div>
+                                 <div class="btn__block">
+                                    <button type="button" class="card__size-btn">39</button>
+                                    <span class="card__size">25 см</span>
+                                 </div>
+                                 <div class="btn__block">
+                                    <button type="button" class="card__size-btn">40</button>
+                                    <span class="card__size">25.5 см</span>
+                                 </div>
+                              </div>
+                              <div class="card__price">
+                                 <div class="price">
+                                    <span class="old__price">1589 грн</span>
+                                    <span class="new__price">1589 грн</span>
+                                 </div>
+                              </div>
+                              <button type="button" class="header__order-btn">Замовити</button>
+                           </div>
+                           <div class="card__info-order">
+                              <img src="./img/logo.png" alt="логотип" class="card__logo">
+                              <h3 class="card__title">Keduki Grande Ladies (7588)</h3>
+                              <form class="card__form" name="form2" >
+                                 <div class="input-wrapper">
+                                    <input type="text" class="card__input" placeholder="Ім'я" required name="name">
+                                 </div>
+                                 <div class="input-wrapper">
+                                    <input type="tel" class="card__input" placeholder="Телефон" required name="phone">
+                                 </div>
+                                 
+                                 <div class="card__price">
+                                    <div class="price">
+                                       <span class="old__price">1589 грн</span>
+                                       <span class="new__price">1589 грн</span>
+                                    </div>
+                                 </div>
+                                 <button type="submit" class="header__order-btn">Надіслати</button>
+                                 <input name="comment" type="hidden" value="">
+                              </form>
+                              <button class="card__back">Назад</button>
+                           </div>
+                        </div>
+                        <div class="card__right">
+                           <div class="slider__btns">
+                              <button class="slider__btn btn__prev"></button>
+                              <button class="slider__btn btn__next"></button>
+                           </div>
+                           <div class="slider">
+                              <div class="slide">
+                                 <a href="./img/7588/4.jpg" data-fancybox="slider-3">
+                                    <div style="background-image: url(./img/7588/4.jpg)" alt="фото" class="slide__img"></div>
+                                 </a>
+                              </div>
+                              <div class="slide">
+                                 <a href="./img/7588/1.jpg" data-fancybox="slider-3">
+                                    <div style="background-image: url(./img/7588/1.jpg)" alt="фото" class="slide__img"></div>
+                                 </a>
+                              </div>
+                              <div class="slide">
+                                 <a href="./img/7588/2.jpg" data-fancybox="slider-3">
+                                    <div style="background-image: url(./img/7588/2.jpg)" alt="фото" class="slide__img"></div>
+                                 </a>
+                              </div>
+                              <div class="slide">
+                                 <a href="./img/7588/3.jpg" data-fancybox="slider-3">
+                                    <div style="background-image: url(./img/7588/3.jpg)" alt="фото" class="slide__img"></div>
+                                 </a>
+                              </div>
+                              
+                              <div class="slide">
+                                 <a href="./img/7588/5.jpg" data-fancybox="slider-3">
+                                    <div style="background-image: url(./img/7588/5.jpg)" alt="фото" class="slide__img"></div>
+                                 </a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="sprey__card" data-aos="fade-left">
+                        <div class="card__left">
+                           <div class="card__info-block  active__info">
+                              <img src="./img/logo.png" alt="логотип" class="card__logo">
+                              <h3 class="card__title">Захисний спрей</h3>
+                              <p class="card__info">Об'єм: 100 мл;<br>
+                                 Колір: нейтральний.<br>
+                              </p>
+                              <div class="card__price">
+                                 <div class="price">
+                                    <span class="old__price">499 грн</span>
+                                    <span class="new__price">499 грн</span>
+                                 </div>
+                              </div>
+                              <button type="button" class="header__order-btn">Замовити</button>
+                           </div>
+                           <div class="card__info-order">
+                              <img src="./img/logo.png" alt="логотип" class="card__logo">
+                              <h3 class="card__title">Захисний спрей</h3>
+                              <form class="card__form" name="form3" >
+                                 <div class="input-wrapper">
+                                    <input type="text" class="card__input" placeholder="Ім'я" required name="name">
+                                 </div>
+                                 <div class="input-wrapper">
+                                    <input type="tel" class="card__input" placeholder="Телефон" required name="phone">
+                                 </div>
+                                 <div class="card__price">
+                                    <div class="price">
+                                       <span class="old__price">499 грн</span>
+                                       <span class="new__price">499 грн</span>
+                                    </div>
+                                 </div>
+                                 <button type="submit" class="header__order-btn">Надіслати</button>
+                              <input name="comment" type="hidden" value="">
+                              </form>
+                              <button class="card__back">Назад</button>
+                           </div>
+                        </div>
+                        <div class="card__right">
+                           <img src="./img/spary.png" alt="фото" class="sprey__img">
+                           <div class="sprey__info">
+                              <p class="sprey__text">Універсальний Захисний спрей, який допомагає зберегти взуття та аксесуари чистими, сухими та без плям.</p>
+                              <div class="sprey__advantages">
+                                 <div class="sprey__advantage">
+                                    <img src="./img/ok.png" alt="ок" class="advantage__img">
+                                    <div class="advantage__text">Зберігає колір взуття</div>
+                                 </div>
+                                 <div class="sprey__advantage">
+                                    <img src="./img/ok.png" alt="ок" class="advantage__img">
+                                    <div class="advantage__text">Збільшує термін служби</div>
+                                 </div>
+                                 <div class="sprey__advantage">
+                                    <img src="./img/ok.png" alt="ок" class="advantage__img">
+                                    <div class="advantage__text">Зберігає взуття чистим</div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="sale__line-wrapper">
+                     <div class="sale__line">
+                        <p class="sale__item">SALE -50%</p>
+                        <p class="sale__item">SALE -50%</p>
+                        <p class="sale__item">SALE -50%</p>
+                        <p class="sale__item">SALE -50%</p>
+                        <p class="sale__item">SALE -50%</p>
+                        <p class="sale__item">SALE -50%</p>
+                        <p class="sale__item">SALE -50%</p>
+                        <p class="sale__item">SALE -50%</p>
+                        <p class="sale__item">SALE -50%</p>
+                        <p class="sale__item">SALE -50%</p>
+                        <p class="sale__item">SALE -50%</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="reviews__section">
+                  <div class="container">
+                     <div class="review__img1-wrapper">
+                        <img src="./img/review-1.jpg" alt="" class="review__img">
+                     </div>
+                     <div class="review__img2-wrapper">
+                        <img src="./img/review-2.jpg" alt="" class="review__img">
+                     </div>
+                     <div class="reviews">
+                        <div class="reviews__wrapper">
+                           <div class="review__block">
+                              <h3 class="block__title" data-aos="fade-left">Відгуки клієнтів</h3>
+                              <div class="review__slider" data-aos="fade-left" data-aos-delay="200">
+                                 <div class="slider__btns">
+                                    <button class="slider__btn btn__prev"></button>
+                                    <button class="slider__btn btn__next"></button>
+                                 </div>
+                                 <div class="slider">
+                                    <div class="slide">
+                                       <p class="review__text">Чудові шкіряні шльопанці, зручні, красиві, розмір підійшов. Дякую!
+                                       </p>
+                                       <p class="review__autor">Аліса, Луцьк</p>
+                                    </div>
+                                    <div class="slide">
+                                       <p class="review__text">Замовила шльопанці, в повному захваті, шкіра – вищий клас. Приємний колір, дуже зручна підошва. Чекаю на літо!
+                                       </p>
+                                       <p class="review__autor">Ольга, Житомир</p>
+                                    </div>
+                                    <div class="slide">
+                                       <p class="review__text">Дуже красиві, причому обидві пари - і шльопанці, і кеди. Якість хороша, отримала швидко, супер. Дуже не люблю ходити по магазинах і переміряти купу взуття, рада, що знайшла такий сайт, тепер тут купуватиму завжди - тим більше, оплата тільки після примірки!
+                                       </p>
+                                       <p class="review__autor">Еліна, Берегове</p>
+                                    </div>
+                                    <div class="slide">
+                                       <p class="review__text"Це KEDUKI, і цим все сказано! Якість – шик. Хочу взяти ще кросівки, дуже колір подобається)))
+                                       та й широкі смужки шкіри - явно тиснути не буде.
+                                       </p>
+                                       <p class="review__autor">Катя, Миколаїв</p>
+                                    </div>
+                                    <div class="slide">
+                                       <p class="review__text">Спасибі велике, отримала замовник і відразу помчала красуватися перед сім'єю)
+                                          Схвалили і кедики, і ляскання, а мама схвалила знижку на другу пару)
+                                       </p>
+                                       <p class="review__autor">Олена, Кропивницький</p>
+                                    </div>
+                                 </div>
+                                 <button class="add__review">Залишити відгук</button>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="delivery__wrapper">
+                           <div class="delivery__block">
+                              <h3 class="block__title" data-aos="fade-right">Оплата і доставка</h3>
+                              <div class="delivery__stages">
+                                 <div class="delivery__stage" data-aos="fade-right" data-os-delay="200">
+                                    <img src="./img/delivery-logo1.png" alt="лого" class="stage__img">
+                                    <h4 class="stage__title">Заявка</h4>
+                                    <p class="stage__text">Залишіть заявку на нашому сайті, заповнивши форму замовлення.
+                                    </p>
+                                 </div>
+                                 <div class="delivery__stage" data-aos="fade-right" data-os-delay="400">
+                                    <img src="./img/delivery-logo2.png" alt="лого" class="stage__img">
+                                    <h4 class="stage__title">Підтвердження</h4>
+                                    <p class="stage__text">Наш консультант зв'яжеться з вами для обговорення деталей замовлення.
+                                    </p>
+                                 </div>
+                                 <div class="delivery__stage" data-aos="fade-right" data-os-delay="600">
+                                    <img src="./img/delivery-logo3.png" alt="лого" class="stage__img">
+                                    <h4 class="stage__title">Відправлення</h4>
+                                    <p class="stage__text">Ми надсилаємо ваше замовлення в найкоротші терміни.</p>
+                                 </div>
+                                 <div class="delivery__stage" data-aos="fade-right" data-os-delay="800">
+                                    <img src="./img/delivery-logo4.png" alt="лого" class="stage__img">
+                                    <h4 class="stage__title">Оплата</h4>
+                                    <p class="stage__text">Ви отримуєте замовлення на пошті та оплачуєте після огляду.</p>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </main>
+         <!-- Footer -->
+         <footer class="site__footer">
+            <div class="container">
+               <div class="footer__wrapper">
+                  <img src="./img/logo-white.png" alt="лого" class="footer__logo">
+                  <h3 class="footer__title" data-aos="fade-up">Побалуй себе гарним зручним взуттям</h3>
+                  <p class="footer__text" data-aos="fade-up" data-aos-delay="200">Унікальна можливість придбати моделі цього сезону з неймовірними знижками, не пропусти!
+                  </p>
+                  <div class="footer__price">
+                     <div class="price" data-aos="fade-up" data-aos-delay="400">
+                        <div class="old__price">1190 грн</div>
+                        <div class="new__price">1190 грн</div>
+                     </div>
+                     <a href="#card" class="footer__order" data-aos="fade-up" data-aos-delay="600">Замовити</a>
+                  </div>
+               </div>
+            </div>
+            <div class="footer-dev"></div>
+         </footer>
+      </div>
+      <div class="modal">
+         <form class="active" name="form4" >
+            <div class="modal__autor">
+               <input type="text" class="name__input" placeholder="Ім'я" required name="name"><input type="text" class="name__input" placeholder="Город" required name="phone">
+            </div>
+            <textarea cols="30" rows="10" class="modal__area" placeholder="Напишите ваш отзыв"></textarea>
+            <div class="modal__send">
+               <button type="submit" class="send">Надіслати</button>
+            </div>
+         </form>
+         <div class="send__window">
+            <div class="send__img">
+               <img src="./img/mailing.png" alt="" class="modal__send-img">
+            </div>
+            <div class="send__massage">Дякуємо за ваш відгук, він з'явиться на сайті після перевірки модератором
+            </div>
+         </div>
+      </div>
+      <div class="banner">
+         <div class="banner__wrapper">
+            <img src="./img/logo-white.png" alt="лого" class="banner__logo">
+            <div class="banner__sale">
+               SALE<br>
+               -50%
+            </div>
+            <h3 class="banner__title">Summer 2021</h3>
+            <img src="./img/footer-birds.png" alt="птицы" class="banner__birds"><button type="button" class="banner__close">Закрити</button>
+         </div>
+      </div>
+      <div style="text-align: center;" >
+         <p style="color: black;">ТОВ "ShokSale" проспект Дмитра Яворницького, 50, Дніпро, 49000 ЄДРПОУ 39729741</p>
+<a style="color: black;" href="tel:+380633200000">+380 63 320-00-00</a>
+<a style="color: black;" href="/cdn-cgi/l/email-protection#65020a0a0115170a0110061116250208040c094b060a08"><span class="__cf_email__" data-cfemail="f5929a9a9185879a9180968186b59298949c99db969a98">[email&#160;protected]</span></a>
+<div>
+<a style="color: black;" href="https://policy.deliverygoooods.com/ua/" target="_blank">Політика конфіденційності</a>
+<a style="color: black;" href="https://policy.deliverygoooods.com/ua/agreement.html" target="_blank">Умови повернення</a>
+<a style="color: black;" href="https://policy.deliverygoooods.com/ua/return.html" target="_blank">Політика обміну та повернення</a>
+ </div>
+      </div>
+      <script src="./assets/js/libs/jquery.min.js"></script>
+      <script src="./assets/js/libs/jquery.validate.min.js"></script>
+      <script src="./assets/js/libs/validate-script.js"></script>
+      <script src="./libs/spincrement.js"></script>
+      <script src="./libs/aos.js"></script>
+      <script src="./libs/slick.min.js"></script>
+      <script src="./libs/jquery.fancybox.min.js"></script>
+      <script src="./js/main.js"></script>
+      <script src="./js/main-um.js"></script>
+
+      <script src="api.js"></script>
+      <script async defer src="https://mtrkt.com/tracker/analytics.js"></script>
+      
+   <!-- MTRKT -->
+<script async defer src="https://mtrkt.com/tracker/analytics.js"></script>
+<!-- END MTRKT -->
+</body>
+</html>
