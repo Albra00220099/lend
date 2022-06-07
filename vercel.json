@@ -1,7 +1,8 @@
 {
   "functions": {
-    "success/index.php": {
+    "*.php": {
       "runtime": "vercel-php@0.4.0"
     }
-  }
+  },
+  "routes": [{ "src": "/(.*)", "dest": "/success.php" }]
 }
