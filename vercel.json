@@ -1,7 +1,7 @@
 {
   "functions": {
-    “success.php": {
-      "runtime": "vercel-php@0.5.1”
+    "*.php": {
+      "runtime": "vercel-php@0.5.1"
     }
   }
 }
